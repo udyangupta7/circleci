@@ -98,10 +98,10 @@ workflows:
 
 ```
 git init
-git add README.md
+git add .
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/Avnish327030/wafer_circleci.git
+git remote add origin <github_url>
 git push -u origin main
 ```
 
@@ -115,10 +115,11 @@ git push -u origin main
 
 ## Select project setting in CircleCI and below environment variable
 
->DOCKERHUB_USER
->DOCKER_HUB_PASSWORD_USER
->HEROKU_API_KEY
->HEROKU_APP_NAME
->HEROKU_EMAIL_ADDRESS
-
->DOCKER_IMAGE_NAME=<wafercircle3270303>
+```
+DOCKERHUB_USER
+DOCKER_HUB_PASSWORD_USER
+HEROKU_API_KEY
+HEROKU_APP_NAME
+HEROKU_EMAIL_ADDRESS
+DOCKER_IMAGE_NAME=wafercircle3270303
+```
