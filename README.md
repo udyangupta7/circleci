@@ -92,7 +92,11 @@ workflows:
               only:
                 - main
 ```
+## to create requirements.txt
 
+```buildoutcfg
+pip freeze>requirements.txt
+```
 
 ## initialize git repo
 
