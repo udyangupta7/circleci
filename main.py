@@ -70,11 +70,11 @@ def predictRouteClient():
 @cross_origin()
 def trainRouteClient():
     try:
-        #if request.json['folderPath'] is not None:
-        folder_path="Training_Batch_Files"
-            #path = request.json['folderPath']
+        # if request.json['folderPath'] is not None:
+        folder_path = "Training_Batch_Files"
+        # path = request.json['folderPath']
         if folder_path is not None:
-            path=folder_path
+            path = folder_path
 
             train_valObj = train_validation(path)  # object initialization
 
@@ -98,10 +98,10 @@ def trainRouteClient():
     return Response("Training successful!!")
 
 
-# port = int(os.getenv("PORT",5000))
+port = int(os.getenv("PORT", 5000))
 if __name__ == "__main__":
     host = '0.0.0.0'
-    port = 5000
+    # port = 5000
     httpd = simple_server.make_server(host, port, app)
     # print("Serving on %s %d" % (host, port))
     httpd.serve_forever()
